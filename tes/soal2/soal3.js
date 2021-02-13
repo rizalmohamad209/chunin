@@ -1,12 +1,17 @@
-segitiga=(printSegita)=>{
+segitiga=(number)=>{
+    let printSegita = number
     for ( i=printSegita;i>=1;i--){
-        for(j=printSegita;j>i ;j--){
+        for(k=printSegita -1;k>=i ;k--){
             process.stdout.write(" ");
         }
-        for(k=1;k< (i*2);k++){
-            process.stdout.write(`${k}`);
+        for(j=i;j>=1;j--){
+            process.stdout.write(" "+j);
         }
         process.stdout.write("\n");
     }   
     }
     segitiga(5)
+
+    
+
+

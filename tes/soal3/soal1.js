@@ -17,23 +17,17 @@ const names = [
   "Penelope",
 ];
 function utama(mengandung,jumlah,callback){
-  namaa= names.map(function(x){ return x.toLowerCase(); })
- let second=  namaa.filter(function(nama){
-  return nama.includes(mengandung)   
+ let namaa=names.map((item)=>{ return item.toLowerCase(); })
+ let second=  namaa.filter((nama)=>{
+  return nama.includes(mengandung.toLowerCase())   
   })
-  if(jumlah === 3){
-    second.splice(0,1)
-  }
-  callback(second)
+  callback(second,jumlah)
 }
-function gede (second){
- upper=second.map((val)=>{
+function toUpperCase (second,jumlah){
+ let upper=second.map((val)=>{
   return val.charAt(0).toUpperCase()+val.slice(1) 
  })
- console.log(upper)
+ let result=upper.slice(0,jumlah)
+ console.log(result)
 }
-utama('an',3,gede)
-
-
-
- 
+utama('a',8,toUpperCase)

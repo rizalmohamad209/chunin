@@ -1,15 +1,19 @@
-
 function batas(deret){
-    let strKsg;
-    let jd=deret.toString();
-    let pch = jd.split(0)
+  let result= ''
+  let str=deret.toString();
+  let pch = str.split(0)
+  if(typeof(deret) !== "number"){
+    console.log("Inputan Bukan Integer")
+  }else{
    for(i=0;i<pch.length;i++){
-    strKsg= pch[i].split("")
+   let strKsg= pch[i].split("")
     const hsl= strKsg.sort()
-    let res=hsl.join("")
-     parseInt(process.stdout.write(res))
+    result += hsl.join("")
    }
-   process.stdout.write('\n')
-     return strKsg
+     console.log(parseInt(result))
+  }
    }
-   batas(543022203330440)
+   batas(5430222033304477)
+
+
+   

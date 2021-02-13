@@ -1,9 +1,26 @@
-function reverse(str){
-    let pecah= str.split(" ")
-    let result=""
-     for(let i = pecah.length - 1; i >= 0; i--){
-        result += pecah[i]+ " "; }
-        return result
-   }
-   console.log(reverse("Saya Cinta PLUGIN"))
- 
+const revereseKata = (kata) => {
+    let newKata = reversedHuruf(kata);
+    let temp= ''
+    let result = ''
+    for(i = 0; i < newKata.length; i++){
+        if(newKata[i] === ' '){
+            result += temp + ' '
+            temp= '';
+        }else{
+            temp= newKata[i] + temp;
+        }
+    }
+    return result+temp
+}
+const reversedHuruf = (word) => {
+    let tempString = '';
+    for(i=0;i< word.length;i++){
+        tempString= word[i] + tempString
+    }
+    return tempString
+}
+
+console.log(revereseKata("Saya Cinta Plugin"))
+
+
+

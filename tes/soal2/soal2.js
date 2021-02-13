@@ -13,12 +13,6 @@ let data = {
     website: 'hildegard.org'
 }
 let {address: {street,city}} =data
-
-
-let ubah ={...data, name: 'Mohamad Rizal Khamami', email:'rizalmohamad209@gmail.com', hobi: 'Mendengarkan musik'}
-console.log(ubah)
-
-console.log(`${street} \n${city}`)
-
-
-//disini s
+ data ={...data, name: 'Mohamad Rizal Khamami', email:'rizalmohamad209@gmail.com', hobi: 'Mendengarkan musik'}
+console.log(data)
+console.log(`${street} ${city}`)

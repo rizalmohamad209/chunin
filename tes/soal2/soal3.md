@@ -1,7 +1,7 @@
 ### Soal 2 ke 3
 #### Buatlah program yang memiliki satu variabel dengan nama “printSegitiga” yg berisi tipe data number yang menghasilkan output segitiga terbalik yang berisi angka
 
-[Code dari soal 2 ke 3](Link Playcode)
+[Code Soal 2 ke 3](https://playcode.io/737243/)
 
 ```javascript
     segitiga=(number)=>{

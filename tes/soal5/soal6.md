@@ -31,4 +31,4 @@
     Perbedaan front end dan back end
 
         -front end adalah developer yang job desknya mengatur layout atau user interface suatu website atau aplikasi bukan hanya mengatur user interface saja seorang front end developer di tuntut bisa consume api dan setelah itu bisa mengolahnya
-        -back end adalah developer yang job desknya menyediakan rest api untuk di olah lagi oleh seorang front end developer.
+        -back end adalah developer yang job desknya menyediakan RESTFul api untuk di olah lagi oleh seorang front end developer.
